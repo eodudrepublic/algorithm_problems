@@ -1,0 +1,17 @@
+# 2023-07-23 (07-24)
+import sys
+
+x = sys.stdin.readline().rstrip()
+if x == 'A+' : sys.stdout.write('4.3')
+elif x == 'A0' : sys.stdout.write('4.0')
+elif x == 'A-' : sys.stdout.write('3.7')
+elif x == 'B+' : sys.stdout.write('3.3')
+elif x == 'B0' : sys.stdout.write('3.0')
+elif x == 'B-' : sys.stdout.write('2.7')
+elif x == 'C+' : sys.stdout.write('2.3')
+elif x == 'C0' : sys.stdout.write('2.0')
+elif x == 'C-' : sys.stdout.write('1.7')
+elif x == 'D+' : sys.stdout.write('1.3')
+elif x == 'D0' : sys.stdout.write('1.0')
+elif x == 'D-' : sys.stdout.write('0.7')
+else : sys.stdout.write('0.0')
