@@ -1,0 +1,5 @@
+# 2023-08-23 (08-24)
+N = int(input())
+arr = list(map(int, input().split()))
+v = int(input())
+print(arr.count(v))
