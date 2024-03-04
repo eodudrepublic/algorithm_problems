@@ -1,21 +1,16 @@
 import sys
 
-M = 1000000007
+matrix = [[1, 1], [1, 0]]
+m = [[1, 1], [1, 0]]
 
-def fib(K) :
-    if fibo[K] == -1 :
-        if K % 2 == 0 :
-            n = K // 2
-            fibo[K] = ((2*fib(n-1) + fib(n))*fib(n)) % M
-        else :
-            n = (K+1) // 2
-            fibo[K] = (fib(n-1) * fib(n-1) + fib(n) * fib(n)) % M
-    return fibo[K]
+def mul_matrix() :
+    temp = [[0, 0], [0, 0]]
+    for x in range(2) :
+        for y in range(2) :
+            for z in range(2) :
+                temp[x][y] += matrix[x][z] * m[z][y]
+    return temp
 
-N = int(sys.stdin.readline())
-fibo = [-1] * (N+1)
-fibo[0] = 0
-fibo[1] = 1
-fibo[2] = 1
-
-print(fib(N))
+for _ in range(8) :
+    matrix = mul_matrix()
+print(matrix)
