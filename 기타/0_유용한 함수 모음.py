@@ -2,8 +2,6 @@ import sys
 from collections import deque
 # alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'] 
 
-# ex3
-
 # arr = [1, 2, 3]
 # print(*arr) # -> 1 2 3
 
@@ -129,3 +127,9 @@ def bfs(matrix, x, y) :
 # #     matrix.append(line)
 
 # --------------------------------------------------------------------------------
+
+# ex4 : 최대공약수 함수 -> 진짜 많이 쓰임!
+def GCD(x, y) :
+    while y :
+        x, y = y, x % y
+    return x
