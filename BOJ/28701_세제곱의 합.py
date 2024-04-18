@@ -1,0 +1,6 @@
+# 2024-04-18 (04-19)
+N = int(input())
+num = sum(range(1, N+1))
+print(num)
+print(num**2)
+print(num**2)
